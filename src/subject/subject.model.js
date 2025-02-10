@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-
+// se hace el modelo de Subjec
 const subjectSchema = new Schema({
     nameSubject: {
         type: String,
@@ -7,7 +7,7 @@ const subjectSchema = new Schema({
     },
     gestor: {
         type: Schema.Types.ObjectId,
-        ref: 'Teacher',
+        ref: 'Teacher', // se hace refencia a Teacher ya que se trabajara con conexion
         required: true
       },
     status: {

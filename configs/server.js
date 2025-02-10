@@ -25,11 +25,11 @@ const middlewares = (app) => {
 }
 
 const routes = (app) => {
-    app.use("/gestor/v1/registro", registerSRoutes)
-    app.use("/gestor/v1/student", studentRoutes)
-    app.use("/gestor/v1/registrot", registerTRoutes)
-    app.use("/gestor/v1/teacher", teacherRoutes)
-    app.use("/gestor/v1/subject", subjectRoutes)
+    app.use("/gestor/v1/registro", registerSRoutes) //ruta de registro para ESTUDIANTE
+    app.use("/gestor/v1/student", studentRoutes)    //ruta para el archivo de rutas ESTUDIANTES
+    app.use("/gestor/v1/registrot", registerTRoutes)//ruta de registro para TEACHER
+    app.use("/gestor/v1/teacher", teacherRoutes)    //ruta para el archivo de rutas de TEACHER
+    app.use("/gestor/v1/subject", subjectRoutes)    //para el archivo de rutas de Materias
 }
 
 const conectarDB = async () => {

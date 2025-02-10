@@ -4,6 +4,7 @@ import { hash, verify } from "argon2";
 // Registro de estudiante
 export const registerStudent = async (req, res) => {
     try {
+        // se pidenn estos atributos de ESTUDIANTE
         const { firstName, lastName, email, grade, password } = req.body;
 
         const encryptedPassword = await hash(password);
@@ -33,7 +34,7 @@ export const registerStudent = async (req, res) => {
     }
 }
 
-// Login del estudiante
+// Login del estudiante, Pidiendo EMAIL  Y PASSWORD
 export const loginStudent = async (req, res) => {
     const { email, password } = req.body;
     try {

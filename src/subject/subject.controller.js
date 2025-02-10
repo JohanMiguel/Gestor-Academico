@@ -3,6 +3,8 @@
 import Teacher from "../teacher/teacher.model.js";
 import Subject from "./subject.model.js";
 
+
+// metodo para Guardar una Materia (SUBJECT)
 export const saveSubject = async (req, res) => {
     const { nameSubject, status = true } = req.body;
     const { teacherId } = req.params;

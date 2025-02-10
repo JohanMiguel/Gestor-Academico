@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
 
+// se hace modelo, con sus atributos correspondentes, se trabaja en ingles ya que es buenas practica
 const teacherSchema = Schema({
     firstName: {
         type: String,

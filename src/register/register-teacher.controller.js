@@ -36,6 +36,8 @@ export const registerTeacher = async (req, res) => {
     }
 };
 
+
+// metodo para login de Teacher
 export const loginTeacher = async (req, res) => {
     const { email, password } = req.body;
 
